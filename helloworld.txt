@@ -1,0 +1,18 @@
+Sample program to print Hello World with Lemmingcraft
+Block index (because Lemmingcraft really shows operations with pictures)
+S = Start (flow moves right from here)
+"S" = Push "S" to the stack
+P = Display text
+E = End proram
+------------------
+
+S "0" "D" "L" "R" "O" "W" " " v
+E      P  "H" "E" "L" "L" "O" <
+
+------------------
+Here's another example! With a new block index:
+S = Start (flow moves right)
+P = Flag block. Prints pre-defined text when received a non-zero value; in this case "Hello world!"
+E = End program
+
+S 1 P E
