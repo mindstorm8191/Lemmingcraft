@@ -1,0 +1,23 @@
+Sample LemmingCraft program to determine the length of a string
+The string is presumed to be in reverse order on the stack, and ends with a 0 character
+
+Block index (because Lemmingcraft really shows operations with pictures)
+Sta = Start, moving right
+Is0 = pop the top value, check if top character is zero
+Dup = Duplicate the top value
+DUn = Pop the top value, then duplicate the value N characters deep
+Inc = Increment the top value
+Dec = Decrement the top value
+Dis = Display the top value
+End = End program
+
+                      End
+                      Dis
+                      Dec
+Sta  1  >>  Dup  DUn  Is0
+        ^^       Inc   <<
+
+Let's re-order this for a little bit cleaner code
+
+Sta  1  >>  Dup  DUn   vv
+        ^^       Inc  Is0  Dec  Dis  End
